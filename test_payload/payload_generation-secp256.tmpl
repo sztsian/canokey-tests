@@ -1,0 +1,16 @@
+%echo Generating a basic OpenPGP key
+%no-protection
+Key-Type:ECDSA 
+Key-Curve: secp256k1
+Key-Usage: cert, sign, auth
+Subkey-Type: ecdh
+Subkey-Curve: secp256k1
+Subkey-Usage: encrypt
+Name-Real: CanoKeys Testing
+Name-Comment: For secp256k1 testing purpose only
+Name-Email: testing@canokeys.org
+Expire-Date: 0
+# Passphrase: 123456
+# Do a commit here, so that we can later print "done" :-)
+%commit
+%echo done
